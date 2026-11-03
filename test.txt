@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 this is new file
 this is branch testing
 this is merge conflicts
+=======
+this is feature merge conflict
+>>>>>>> feature/log_in
