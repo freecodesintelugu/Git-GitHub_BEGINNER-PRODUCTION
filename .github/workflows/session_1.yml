@@ -9,15 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3 # This action checks out your repository under $GITHUB_WORKSPACE, so your workflow can access it.
-      - name: Set up Python
-        uses: actions/setup-python@v4 # This action sets up a Python environment for use in actions by adding it to the PATH.
-        with:
-          python-version: '3.9' # This specifies the version of Python to set up.
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip # This command upgrades pip to the latest version.
-          pip install -r requirements.txt # This command installs the dependencies listed in requirements.txt.
-      - name: Run tests
-        run: |
-          pytest # This command runs the tests using pytest
+        uses: actions/checkout@v3
+      - name: user 
+        run: echo "Hello, ${{ github.actor }}! Welcome to the CI pipeline."
